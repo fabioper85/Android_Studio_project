@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/savePhotoButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/scatta_foto"/>
+
+    <EditText
+        android:hint="@string/nomeLabel"
+        android:inputType="text"
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:hint="@string/mail_pl"
+        android:inputType="textEmailAddress"
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:hint="@string/phoneLabel"
+        android:inputType="phone"
+        android:id="@+id/editPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:hint="@string/bioLabel"
+        android:inputType="text"
+        android:id="@+id/editBio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/saveDataButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/editButton"/>
+
+</LinearLayout>

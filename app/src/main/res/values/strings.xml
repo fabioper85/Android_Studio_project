@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Photo</string>
+    <string name="scatta_foto">Snap a photo</string>
+    <string name="name_pl">Nome</string>
+    <string name="mail_pl">Mail</string>
+    <string name="nomeLabel">Nome: </string>
+    <string name="mailLabel">Mail: </string>
+    <string name="bioLabel">Bio: </string>
+    <string name="phoneLabel">Phone: </string>
+    <string name="editButton">SALVA</string>
+    <string name="nomeBenzinaio">Nome benzinaio: </string>
+    <string name="importo">Importo rifornimento: </string>
+    <string name="addRifornimentoButton">ADD RIFORNIMENTO</string>
+</resources>
