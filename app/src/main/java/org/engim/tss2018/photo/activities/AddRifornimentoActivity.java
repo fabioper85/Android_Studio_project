@@ -31,8 +31,8 @@ public class AddRifornimentoActivity extends AppCompatActivity
 
         setContentView(R.layout.add_rifornimento_activity);
 
-        nomeBenzinaioEdit = findViewById(R.id.nomeBenzinaio);
-        importoEdit = findViewById(R.id.price);
+        nomeBenzinaioEdit = findViewById(R.id.addRifornimentoNome);
+        importoEdit = findViewById(R.id.addRifornimentoImporto);
         saveRifornimento = findViewById(R.id.addRifornimentoBtn);
 
         saveRifornimento.setOnClickListener(new View.OnClickListener() {

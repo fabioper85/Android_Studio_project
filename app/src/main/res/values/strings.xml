@@ -11,4 +11,6 @@
     <string name="nomeBenzinaio">Nome benzinaio: </string>
     <string name="importo">Importo rifornimento: </string>
     <string name="addRifornimentoButton">ADD RIFORNIMENTO</string>
+    <string name="menu_drawer_Rifornimenti">Rifornimenti</string>
+    <string name="menu_drawer_Profilo">Profilo</string>
 </resources>

@@ -7,9 +7,9 @@ package org.engim.tss2018.photo.models;
 public class Rifornimento {
 
     private String nomeBenzinaio;
-    private double importo;
+    private float importo;
 
-    public Rifornimento(String nomeBenzinaio, double importo) {
+    public Rifornimento(String nomeBenzinaio, float importo) {
         this.nomeBenzinaio = nomeBenzinaio;
         this.importo = importo;
     }
@@ -30,7 +30,7 @@ public class Rifornimento {
         return importo;
     }
 
-    public void setImporto(double importo) {
+    public void setImporto(float importo) {
         this.importo = importo;
     }
 }

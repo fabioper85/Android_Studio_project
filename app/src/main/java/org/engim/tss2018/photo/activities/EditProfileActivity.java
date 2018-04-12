@@ -185,5 +185,6 @@ public class EditProfileActivity extends AppCompatActivity
         e.putString("bio", bio);
         e.putString("phone", phone);
         e.commit();
+
     }
 }

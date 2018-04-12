@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profilo"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="@string/menu_drawer_Profilo"/>
+        <item
+            android:id="@+id/nav_rifornimenti"
+            android:icon="@drawable/ic_local_gas_station_black_24dp"
+            android:title="@string/menu_drawer_Rifornimenti"/>
+    </group>
+</menu>
