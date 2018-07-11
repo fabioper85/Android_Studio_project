@@ -5,11 +5,14 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.NavigationView;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 import com.google.gson.Gson;
@@ -48,6 +51,11 @@ public class ShowDataActivity extends AppCompatActivity
         myToolbar = findViewById(R.id.toolbar);
         setSupportActionBar(myToolbar);
 
+        if(myToolbar != null)
+        {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+
         rifornimenti = new ArrayList<>();
 
         ShowDataRecycleAdapter adapter = new ShowDataRecycleAdapter(getApplicationContext(),rifornimenti);
@@ -73,11 +81,15 @@ public class ShowDataActivity extends AppCompatActivity
     }
 
     @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
         //return super.onCreateOptionsMenu(menu);
-
-        getMenuInflater().inflate(R.menu.show_data_activity_toolbar_menu, menu);
+        getMenuInflater().inflate(R.menu.toolbar_menu, menu);
         return true;
     }
 
@@ -101,11 +113,5 @@ public class ShowDataActivity extends AppCompatActivity
                 e.commit();
             }
         }
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-
     }
 }

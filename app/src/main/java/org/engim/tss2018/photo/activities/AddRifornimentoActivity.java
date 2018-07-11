@@ -4,8 +4,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -21,12 +23,12 @@ public class AddRifornimentoActivity extends AppCompatActivity
     private TextView nomeBenzinaioEdit;
     private TextView importoEdit;
     private Button saveRifornimento;
-
     private String nomeBenzinaio;
     private String importo;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.add_rifornimento_activity);
@@ -35,14 +37,15 @@ public class AddRifornimentoActivity extends AppCompatActivity
         importoEdit = findViewById(R.id.addRifornimentoImporto);
         saveRifornimento = findViewById(R.id.addRifornimentoBtn);
 
-        saveRifornimento.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
-
         setListener();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        //return super.onCreateOptionsMenu(menu);
+        getMenuInflater().inflate(R.menu.show_data_activity_toolbar_menu, menu);
+        return true;
     }
 
     private void setListener()

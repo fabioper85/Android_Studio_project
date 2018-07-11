@@ -11,7 +11,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -80,8 +79,13 @@ public class ShowProfileActivity extends AppCompatActivity
                     switch(id)
                     {
                         case R.id.nav_rifornimenti:
-                            Intent intent = new Intent(getApplicationContext(), ShowDataActivity.class);
-                            startActivity(intent);
+                            Intent intentRif = new Intent(getApplicationContext(), ShowDataActivity.class);
+                            startActivity(intentRif);
+                            break;
+
+                        case R.id.nav_profilo:
+                            Intent intentProfile = new Intent(getApplicationContext(), ShowProfileActivity.class);
+                            startActivity(intentProfile);
                             break;
                     }
 
